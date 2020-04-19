@@ -1,0 +1,33 @@
+{
+    "name": "armincms/template",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "armincms/bios": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Armincms\\Template\\": "src/"
+        }, 
+        "files": [
+            "src/helpers.php" 
+        ] 
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Armincms\\Template\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
